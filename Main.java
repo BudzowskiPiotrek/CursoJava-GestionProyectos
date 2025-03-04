@@ -18,7 +18,7 @@ public class Main {
 		do {
 			System.out.println("\nPulsa 1. Crear proyecto nuevo");
 			System.out.println("Pulsa 2. Listar proyectos");
-			System.out.println("Pulsa 3. Para cambiar estado de proyecto");
+			System.out.println("Pulsa 3. Avanzar estado de proyecto");
 			System.out.println("Pulsa 4. Listar por prioridad o estado");
 			System.out.println("Pulsa 5. Para salir");
 			flag = sn.nextInt();
@@ -74,7 +74,7 @@ public class Main {
 		}
 	}
 
-	// METODO QUE RECORRE LA ARRAY Y TE DEJA LSITADO DE LOS PROYECTOS ACTUALES
+	// METODO QUE RECORRE LA ARRAY Y MUESTRA DETALLES DE PROYECTOS
 	private static void listaProyectos() {
 		boolean exito = em.listarProyecto();
 		if (!exito) {
@@ -82,7 +82,7 @@ public class Main {
 		}
 	}
 
-	// METODO PARA CREAR PROYECTOS NUVOS
+	// METODO PARA CREAR PROYECTOS NUEVOS
 	private static void crearProyecto() {
 		System.out.println("Dime el nombre de proyecto");
 		String nombre = st.nextLine();
