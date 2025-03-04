@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
 
-	// CREO 4 FUERA PARA TENER FACIL ACCESO A ELLOS
+	// CREO 4  VARIABLES DECLARANDOLOS COMO STATICAS PARA TENER FACIL ACCESO A ELLOS
 	public static Scanner sn = new Scanner(System.in);
 	public static Scanner st = new Scanner(System.in);
 	public static Proyecto[] pr = new Proyecto[100];
@@ -10,7 +10,6 @@ public class Main {
 
 	public static void main(String[] args) {
 		menu();
-
 	}
 
 	// PRIMER MENU DE LOS DOS
@@ -25,7 +24,6 @@ public class Main {
 			flag = sn.nextInt();
 			menuDos(flag);
 		} while (flag != 5);
-
 	}
 
 	// SEGUNDO MENU DE LOS DOS
@@ -47,7 +45,6 @@ public class Main {
 			System.out.println("Opcion no existente");
 			break;
 		}
-
 	}
 
 	// METODO FILTRAR, PREGUNTA POR NUMERO QUE PASA A CLASE DONDE ESTA DESAROLLADO
@@ -57,7 +54,6 @@ public class Main {
 				+ "\n3.Prioridad: ALTA\n4.Estado: NO_INICIADO\n5.Estado: EN_PROGRESO\n6.Estado: COMPLETADO");
 		int numero = sn.nextInt();
 		em.filtrar(numero);
-
 	}
 
 	// METODO QUE PREGUNTA NOMBRE DE PROYECTO Y LUEGO PERMITE SUBIR SU PRIOPRIDAD TE
@@ -76,7 +72,6 @@ public class Main {
 		} else {
 			System.out.println("No se pudo avanzar, o proyecto no se encuentra o ya esta terminado");
 		}
-
 	}
 
 	// METODO QUE RECORRE LA ARRAY Y TE DEJA LSITADO DE LOS PROYECTOS ACTUALES
@@ -85,7 +80,6 @@ public class Main {
 		if (!exito) {
 			System.out.println("No hay proyectos disponibles");
 		}
-
 	}
 
 	// METODO PARA CREAR PROYECTOS NUVOS
@@ -102,7 +96,5 @@ public class Main {
 		} else {
 			System.out.println("Error, no se pudo agregar proyecto");
 		}
-
 	}
-
 }
