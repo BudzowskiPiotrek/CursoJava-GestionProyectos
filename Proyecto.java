@@ -1,10 +1,9 @@
 public class Proyecto {
-	
-	// CONSTRUCTOR VARIABLES Y SETER
 	private String nombre;
 	private EstadoProyecto estado;
 	private Prioridad prioridad;
-
+	
+	// CONSTRUCTOR Y SUS SETER Y GETER
 	public Proyecto(String nombre, Prioridad prioridad) {
 		this.nombre = nombre;
 		this.estado = EstadoProyecto.NO_INICIADO;
@@ -35,7 +34,7 @@ public class Proyecto {
 		this.prioridad = prioridad;
 	}
 
-	// METODO PARA AVANZAR CON SEGURO SI YA ESTA COMPELTADO
+	// METODO PARA AVANZAR CON SEGURO SI YA ESTA COMPLETADO
 	public boolean avanzar() {
 		boolean exito = false;
 		if (estado != EstadoProyecto.COMPLETADO) {
