@@ -5,7 +5,7 @@ public class Empresa {
 		this.proyectos = proyecto;
 	}
 
-	// METEO APRA AGREGAR PROYECTOS
+	// METODO PARA AGREGAR PROYECTOS
 	public boolean agregarProyecto(Proyecto proyecto) {
 		boolean exito = false, seguro = true;
 		for (int i = 0; i < proyectos.length && seguro; i++) {
@@ -18,7 +18,7 @@ public class Empresa {
 		return exito;
 	}
 
-	//METODO PARA LSITAR PROYECTO
+	// METODO PARA LISTAR PROYECTOS
 	public boolean listarProyecto() {
 		boolean exito = false;
 		for (int i = 0; i < proyectos.length; i++) {
@@ -30,7 +30,7 @@ public class Empresa {
 		return exito;
 	}
 
-	// METODO PARA FILTRAR PROYECTO
+	// METODO PARA FILTRAR PROYECTOS POR PRIORIDAD O ESTADO ESPECIFICO
 	public boolean filtrar(int opcion) {
 		boolean exito = false;
 		for (int i = 0; i < proyectos.length; i++) {
