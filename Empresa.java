@@ -34,27 +34,26 @@ public class Empresa {
 	public boolean filtrar(int opcion) {
 		boolean exito = false;
 		for (int i = 0; i < proyectos.length; i++) {
-			if (proyectos[i] != null && opcion == 1 && proyectos[i].getPrioridad()==) {
+			if (proyectos[i] != null && opcion == 1 && proyectos[i].getPrioridad() == Prioridad.BAJA) {
 				proyectos[i].mostrar();
 				exito = true;
-			} else if (proyectos[i] != null && opcion == 2 && proyectos[i].getPrioridad().equals("MEDIA")) {
+			} else if (proyectos[i] != null && opcion == 2 && proyectos[i].getPrioridad() == Prioridad.MEDIA) {
 				proyectos[i].mostrar();
 				exito = true;
-			} else if (proyectos[i] != null && opcion == 3 && proyectos[i].getPrioridad().equals("ALTA")) {
+			} else if (proyectos[i] != null && opcion == 3 && proyectos[i].getPrioridad() == Prioridad.ALTA) {
 				proyectos[i].mostrar();
 				exito = true;
-			} else if (proyectos[i] != null && opcion == 4 && proyectos[i].getEstado().equals("NO_INICIADO")) {
+			} else if (proyectos[i] != null && opcion == 4 && proyectos[i].getEstado() == EstadoProyecto.NO_INICIADO) {
 				proyectos[i].mostrar();
 				exito = true;
-			} else if (proyectos[i] != null && opcion == 5 && proyectos[i].getEstado().equals("EN_PROGRESO")) {
+			} else if (proyectos[i] != null && opcion == 5 && proyectos[i].getEstado() == EstadoProyecto.EN_PROGRESO) {
 				proyectos[i].mostrar();
 				exito = true;
-			} else if (proyectos[i] != null && opcion == 6 && proyectos[i].getEstado().equals("COMPLETADO")) {
+			} else if (proyectos[i] != null && opcion == 6 && proyectos[i].getEstado() == EstadoProyecto.COMPLETADO) {
 				proyectos[i].mostrar();
 				exito = true;
 			}
 		}
 		return exito;
 	}
-
 }
